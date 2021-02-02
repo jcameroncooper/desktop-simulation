@@ -242,7 +242,7 @@
                 @mousedown.self="titleMousedown(app,$event)"
                 @mouseup="mouseup()"
         >
-            <div class="icon {{app.icon}}">
+            <div v-bind:class="'icon ' + app.icon">
 
             </div>
             {{app.title}}
@@ -259,7 +259,7 @@
         <div
                 v-for="dir in resizeDirection"
                 v-show="app.resizable"
-                class="resize-handle resize-handle-{{dir}}"
+                v-bind:class="'resize-handle resize-handle-' + dir"
                 @mousedown="resizeHandler(dir,$event)"
         ></div>
     </div>
@@ -355,7 +355,7 @@
             }
         },
         components: {},
-        ready: function () {
+        mounted: function () {
             var vm = this;
             var $w = $(window);
             var app = vm.app;

@@ -21,7 +21,7 @@
         },
         methods: {},
         components: {},
-        ready: function () {
+        mounted: function () {
 
         }
     }

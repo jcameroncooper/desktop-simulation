@@ -59,7 +59,7 @@
         components: {
 
         },
-        ready: function () {
+        mounted: function () {
             var vm = this;
             $event.on('mousedown:wallpaper',function (data) {
                 vm.selection.startSelection = true;

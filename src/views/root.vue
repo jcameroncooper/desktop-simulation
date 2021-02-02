@@ -36,7 +36,7 @@
             taskbar:require('views/taskbar.vue'),
             mousemenu:require('views/mouse-menu.vue')
         },
-        ready:function () {
+        mounted:function () {
             var vm = this;
         }
     };

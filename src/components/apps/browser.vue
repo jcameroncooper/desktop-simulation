@@ -90,7 +90,7 @@
             </div>
         </header>
         <section class="browser-body" :style="{height: app.height + 'px'}">
-            <iframe v-el:iframe :src="src" name="test" height="100%" width="100%" frameborder="0"></iframe>
+            <iframe ref="iframe" :src="src" name="test" height="100%" width="100%" frameborder="0"></iframe>
         </section>
     </div>
 </template>
@@ -125,17 +125,17 @@
                 this.src = url;
             },
             iframeBack:function () {
-                this.$els.iframe.contentWindow.history.go(-1);
+                this.$refs.iframe.contentWindow.history.go(-1);
             },
             iframeForward:function () {
-                this.$els.iframe.contentWindow.history.go(1);
+                this.$refs.iframe.contentWindow.history.go(1);
             },
             iframeReload:function () {
-                this.$els.iframe.contentWindow.location.reload();
+                this.$refs.iframe.contentWindow.location.reload();
             }
         },
         components: {},
-        ready: function () {
+        mounted: function () {
             if(this.app.data){
                 this.url = this.app.data.index;
                 this.fixUrl();

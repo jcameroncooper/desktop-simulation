@@ -22,11 +22,11 @@
 </style>
 <template>
     <div :style="{height:app.height+'px',width:app.width+'px'}">
-        <div class="icon {{openedFile.icon}}"></div>
+        <div v-bind:class="'icon ' + openedFile.icon"></div>
         <h1>{{openedFile.name}}</h1>
-        <p>目标: <input type="text" disabled value="{{openedFile.app}}"></p>
+        <p>URL: <input type="text" disabled v-bind:value="openedFile.app"></p>
         <main>
-            <pre>{{ openedFile.options.data | json }}</pre>
+            <pre>{{ openedFile.options.data }}</pre>
         </main>
     </div>
 </template>
@@ -60,7 +60,7 @@
         },
         methods: {},
         components: {},
-        ready: function () {
+        mounted: function () {
 
         }
     }

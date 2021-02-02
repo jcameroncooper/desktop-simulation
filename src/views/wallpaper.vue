@@ -48,7 +48,7 @@
             }
         },
         components: {},
-        ready: function () {
+        mounted: function () {
             $(window).on('contextmenu',function (e) {
                 e.preventDefault();
             })

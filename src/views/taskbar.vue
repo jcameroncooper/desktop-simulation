@@ -58,7 +58,7 @@
                     v-for="app in sortedApps"
                     @click="click(app)"
             >
-                <span class="icon {{app.icon}}"></span>{{app.title}}
+                <span v-bind:class="'icon ' + app.icon"></span>{{app.title}}
             </div>
         </div>
     </div>
@@ -104,7 +104,7 @@
             }
         },
         components: {},
-        ready: function () {
+        mounted: function () {
 
         }
     }

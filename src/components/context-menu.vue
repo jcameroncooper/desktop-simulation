@@ -58,7 +58,7 @@
             }
         },
         components: {},
-        ready: function () {
+        mounted: function () {
 
         }
     }

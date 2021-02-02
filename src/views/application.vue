@@ -23,7 +23,7 @@
         components: {
             appWindow:require('components/app-window.vue')
         },
-        ready: function () {
+        mounted: function () {
         }
     };
 </script>

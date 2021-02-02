@@ -57,7 +57,7 @@
              @dragend="onDragend();"
              draggable="true"
         >
-            <div class="icon {{file.icon}}">
+            <div v-bind:class="'icon ' + app.icon">
 
             </div>
             <div class="text">
@@ -105,7 +105,7 @@
             }
         },
         components: {},
-        ready: function () {
+        mounted: function () {
 
         }
     }

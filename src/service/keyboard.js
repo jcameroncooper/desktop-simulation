@@ -39,7 +39,7 @@ var combination = {
 var keypressMap = [];
 module.exports = {
     keypressMap:keypressMap,
-    init:function () {
+    beforeCreate:function () {
         $(window).off('keydown keyup').on('keydown',function (e) {
             keypressMap[e.keyCode] = true;
             change();

@@ -135,7 +135,7 @@
         components: {
             file:require('components/file-item.vue')
         },
-        ready: function () {
+        mounted: function () {
             var vm = this;
 
             vm.sortFile(vm.files);

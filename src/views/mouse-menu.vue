@@ -37,7 +37,7 @@
         components: {
             menu:require('components/context-menu.vue')
         },
-        ready: function () {
+        mounted: function () {
             var vm = this;
             $event.on('contextmenu:file',function (data) {
 //                console.log('file menu',data);
