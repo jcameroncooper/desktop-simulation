@@ -9,6 +9,12 @@ function File(o){
     if(!this.inPosition){
         this.inPosition = false;
     }
+    if(!this.path){
+        this.path = '/';
+    }
+    if(!this.size){
+        this.size = 0;
+    }
     this._sourceData = o;
     this.selected = false;
 }
@@ -17,7 +23,8 @@ File.prototype.open = function () {
     var options = {
         title:file.name,
         type:file.app,
-        icon:file.icon
+        icon:file.icon,
+        path:file.path,
     };
     $.extend(options,file.getOptions());
 

@@ -237,7 +237,7 @@
             $event.on('openFileProp:menu',function (file) {
                 var File = require('service/file.js');
                 var propObj = {
-                    name: file.name +" 属性",
+                    name: file.name +" Attributes",
                     app: "props",
                     icon: file.icon,
                     options: {

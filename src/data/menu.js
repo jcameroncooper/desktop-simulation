@@ -1,7 +1,7 @@
 module.exports = {
     file:[
         {
-            text:"打开",
+            text:"Open",
             type:"open",
             disabled:false,
             callback:function () {
@@ -9,7 +9,7 @@ module.exports = {
             }
         },
         {
-            text:"复制",
+            text:"Copy",
             type:"copy",
             disabled:false,
             callback:function () {
@@ -20,7 +20,7 @@ module.exports = {
             type:"divide"
         },
         {
-            text:"删除",
+            text:"Delete",
             type:"delete",
             disabled:false,
             callback:function () {
@@ -28,7 +28,7 @@ module.exports = {
             }
         },
         {
-            text:"属性",
+            text:"Properties",
             type:"prop",
             callback:function (file) {
                 $event.emit('openFileProp:menu',file);
@@ -37,7 +37,7 @@ module.exports = {
     ],
     wallpaper:[
         {
-            text:"刷新",
+            text:"Refresh",
             type:"refresh",
             disabled:false,
             callback:function () {
@@ -46,14 +46,14 @@ module.exports = {
             }
         },
         {
-            text:'全选',
+            text:'Select All',
             type:"selectAll",
             callback:function () {
                 $event.emit('selectAll:menu');
             }
         },
         {
-            text:"粘贴",
+            text:"Paste",
             type:"paste",
             disabled:true,
             callback:function () {
@@ -64,7 +64,7 @@ module.exports = {
             type:'divide'
         },
         {
-            text:"恢复图标",
+            text:"Reset All Files",
             type:"resetAllFile",
             callback:function () {
                 $event.emit('resetFile:menu');

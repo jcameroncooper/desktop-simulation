@@ -1,35 +1,5 @@
 module.exports = [
     {
-        name: "Safari",
-        app: "browser",
-        icon: "safari",
-        options: {
-            data: {
-                index: "http://baidu.com"
-            },
-            height: function () {
-                return window._h * 0.8;
-            },
-            width: function () {
-                return window._w * 0.8;
-            }
-        }
-    },
-    {
-        name: "Chrome",
-        app: "browser",
-        icon: "chrome",
-        options: function () {
-            return {
-                data: {
-                    index: "http://v2ex.com"
-                },
-                height: window._h * 0.8,
-                width: window._w * 0.8
-            }
-        }
-    },
-    {
         name: "Firefox",
         app: "browser",
         icon: "firefox",
@@ -42,7 +12,7 @@ module.exports = [
         }
     },
     {
-        name: "计算器",
+        name: "Calculator",
         app: "calculator",
         icon: "",
         options: {
@@ -52,9 +22,31 @@ module.exports = [
         }
     },
     {
-        name: "自定义App",
+        name: "Custom",
         app: "custom-app",
         icon: "",
+        options: {
+          singleton: true,
+        }
+    },
+    {
+        name: "Do Work",
+        app: "script",
+        icon: "",
         options: {}
-    }
+    },
+    {
+        name: "Files",
+        app: "folder",
+        icon: "",
+        path: "/data",
+        options: {},
+    },
+    {
+        name: "img23",
+        app: "image",
+        icon: "",
+        path: "/data/",
+        options: {}
+    },
 ];

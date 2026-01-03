@@ -24,7 +24,7 @@
     <div :style="{height:app.height+'px',width:app.width+'px'}">
         <div class="icon {{openedFile.icon}}"></div>
         <h1>{{openedFile.name}}</h1>
-        <p>目标: <input type="text" disabled value="{{openedFile.app}}"></p>
+        <p>App name: <input type="text" disabled value="{{openedFile.app}}"></p>
         <main>
             <pre>{{ openedFile.options.data | json }}</pre>
         </main>

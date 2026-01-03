@@ -72,8 +72,8 @@
     <div class="app-browser">
         <header class="browser-header">
             <div class="browser-control-panel">
-                <div class="back" @click="iframeBack();"> < </div>
-                <div class="forward" @click="iframeForward();"> > </div>
+                <div class="back" @click="iframeBack();"> &lt; </div>
+                <div class="forward" @click="iframeForward();"> &gt; </div>
                 <div class="refresh" @click="iframeReload();"> c </div>
             </div>
             <div class="browser-address-bar">
